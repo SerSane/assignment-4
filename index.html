@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feras Alharbi - Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Feras Alharbi</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title"><span id="greeting">Hello</span>, I'm <span class="highlight">Feras Alharbi</span></h1>
+                <p class="hero-tagline" id="dynamic-tagline">I am a Junior Computer Science Student at KFUPM who is passionate about AI and Cybersecurity</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>My passion lies in AI and Cybersecurity. I am always looking for new ways to use AI for Cybersecurity.</p>
+                    <p>When im not working on personal projects, you can find me reading the latest news and research papers in the field.</p>
+                    <p>I'm always excited to work on new projects and collaborate with amazing people.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/placeholder-image-person.jpg" alt="Feras Alharbi Profile" class="profile-image" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ai">AI & ML</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="system">System Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="ai">
+                    <div class="project-image">
+                        <img src="assets/placeholder-image.png" alt="Contract Generation RAG" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Contract Generation Using RAG</h3>
+                        <p class="project-description">I collaborated with a team of 5 to create a project that utilized an open source LLM and Retrieval Augmented Generation (RAG) to generate contracts tailored to the user's specifications.</p>
+                        <div class="project-details" style="display: none;">
+                            <div class="tech-stack">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Google Cloud</span>
+                                <span class="tech-tag">RAG</span>
+                            </div>
+                            <p class="detail-text">The project was successfully deployed to GCP with features including custom contract templates, user input validation, and automated document generation. We implemented vector databases for efficient document retrieval and fine-tuned the LLM for legal document generation.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/SerSane/RAGsystem" class="project-link">GitHub</a>
+                            <button class="expand-btn" data-project="0">Show Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="system">
+                    <div class="project-image">
+                        <img src="assets/placeholder-image.png" alt="Facility Reservation System" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Facility Reservation System</h3>
+                        <p class="project-description">I worked with team of 4 to create a comprehensive facility reservation system for KFUPM students and faculty.</p>
+                        <div class="project-details" style="display: none;">
+                            <div class="tech-stack">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">REST API</span>
+                            </div>
+                            <p class="detail-text">Built a scalable reservation system with real-time availability checking, automated conflict resolution, and an admin dashboard for facility management. Includes user authentication, booking history, and email notifications.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-link">GitHub</a>
+                            <button class="expand-btn" data-project="1">Show Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="assets/placeholder-image.png" alt="Personal Portfolio" class="project-img" loading="lazy">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Interactive Portfolio Website</h3>
+                        <p class="project-description">A modern, responsive portfolio website showcasing my projects with dynamic content and AI-enhanced features.</p>
+                        <div class="project-details" style="display: none;">
+                            <div class="tech-stack">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API Integration</span>
+                            </div>
+                            <p class="detail-text">Features include dark/light theme toggle, project filtering, API integration for dynamic content, form validation, and smooth animations. Built with accessibility and mobile-first design principles.</p>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="project-link">Live Demo</a>
+                            <button class="expand-btn" data-project="2">Show Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Latest GitHub Projects Section -->
+            <div class="github-section">
+                <h3 class="github-section-title">Latest GitHub Projects</h3>
+                <p class="github-section-subtitle">Automatically fetched from my GitHub profile.</p>
+                <div id="github-projects" class="github-projects"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-content">
+                <div class="skills-placeholder-grid">
+                    <div class="skill-category">
+                        <h4>Frontend</h4>
+                        <p>React.js</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Backend</h4>
+                        <p>Node.js , Python , Java , SQL</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools</h4>
+                        <p>GCP , Firebase , Docker , Git , Pytorch , Hugging Face , Ollama , VectorDBs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Inspiration Section -->
+<section id="inspiration" class="inspiration">
+    <div class="container">
+      <h2 class="section-title">Daily Inspiration</h2>
+      <div class="inspiration-content">
+        <div class="quote-container" id="quote-container">
+          <div class="loading-spinner" id="quote-loader">
+            <div class="spinner"></div>
+            <p>Loading inspiration...</p>
+          </div>
+  
+          <div class="quote-content" id="quote-content" style="display: none;">
+            <blockquote id="quote-text"></blockquote>
+            <cite id="quote-author"></cite>
+          </div>
+        </div>
+  
+        <button class="new-quote-btn" id="new-quote-btn" style="display: none;">
+          <i class="fas fa-sync-alt"></i>
+          Get New Quote
+        </button>
+      </div>
+    </div>
+  </section>
+  
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in new opportunities and exciting projects. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i>
+                            <div>
+                                <h4>Name</h4>
+                                <p>Feras Alharbi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>alharbiferas28@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/feras-alharbi-306879274/" target="_blank" class="social-link">
+                                    LinkedIn Profile
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h3>Send me a message</h3>
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Choose a subject</option>
+                                <option value="collaboration">Collaboration Opportunity</option>
+                                <option value="job">Job Opportunity</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="mentorship">Mentorship</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity..."></textarea>
+                            <span class="error-message" id="message-error"></span>
+                            <span class="char-count" id="char-count">0/500</span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                    
+                    <!-- Success/Error Messages -->
+                    <div class="form-feedback" id="form-feedback" style="display: none;">
+                        <div class="success-message" id="success-message" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <h4>Message sent successfully!</h4>
+                            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+                        </div>
+                        
+                        <div class="error-feedback" id="error-feedback" style="display: none;">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <h4>Oops! Something went wrong</h4>
+                            <p id="error-feedback-text">There was an error sending your message. Please try again or contact me directly at alharbiferas28@gmail.com</p>
+                            <button class="retry-form-btn" id="retry-form-btn">Try Again</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
